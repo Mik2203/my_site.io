@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3fd83896-f919-4055-8239-00ec1dc107a5" name="my_server" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="D:\PHP\PhpStorm\apache\play\htdocs\my_market" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
