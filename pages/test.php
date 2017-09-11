@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 <?php
-echo "Тест 1_____________________2______________________________<br>";
+echo "Тест 1___________________________________________________<br>";
 
 require ("app/classes/Loader.php");
 //require ("../vendor/module/GoodRoom.php");
