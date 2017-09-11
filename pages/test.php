@@ -1,5 +1,5 @@
 <?php
-echo "Тест 1___________________________________________________<br>";
+echo "Тест 1_____________________2______________________________<br>";
 
 require ("app/classes/Loader.php");
 //require ("../vendor/module/GoodRoom.php");
