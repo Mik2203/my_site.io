@@ -1,5 +1,7 @@
 <?php
+namespace app;
 
+use vendor\GoodRoom;
 
 // Унаследывать классы
 class Room extends GoodRoom
