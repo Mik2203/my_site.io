@@ -1,18 +1,26 @@
 <?php
+namespace app;
 
 class Loader
 {
-    public function loadClass($class)
+    public function loadClass($class) /*app\Room*/
     {
-        if($class == "Room")
+        $arr = explode('\\', $class);
+        // вырезать первый элемен в массиве
+        $prefix = array_shift($arr);
+
+        if ($prefix == "app") 
         {
-            $file = '../app/classes/Room.php';
-            echo 'Путььььь: '. $file;
+            $prefix_file = "app/classes/";
+            echo 'Путььььь: ' . $prefix_file . '<br>';
         }
-        elseif($class == "GoodRoom")
+        elseif ($prefix == "vendor") 
         {
-            $file = "../vendor/module/GoodRoom.php";
+            $prefix_file = "vendor/module/";
         }
+
+        //echo "<br>";
+        $file = $prefix_file . array_shift($arr) . ".php";
 
         if(is_file($file))
         {

@@ -6,7 +6,7 @@
  * Time: 17:44
  */
 
-require('views/header.php');
+require("views/header.php");
 
 //var_dump($_GET); //var_dump - как и echo! Вывод на экран
 
@@ -26,7 +26,7 @@ if(isset($_GET['page']))
 }
 else
 {
-    include('pages/error.php');
+    include("pages/error.php");
 }
 
 //switch ($_GET['page'])
@@ -52,5 +52,5 @@ else
 //        break;
 //}
 
-require('views/footer.php');
+require("views/footer.php");
 

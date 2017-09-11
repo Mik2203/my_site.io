@@ -1,21 +1,21 @@
 <?php
-//echo "Тест 1___________________________________________________<br>";
+echo "Тест 1___________________________________________________<br>";
 
-require ('../app/classes/Loader.php');
+require ("app/classes/Loader.php");
 //require ("../vendor/module/GoodRoom.php");
 
-$loader = new Loader();
+$loader = new app\Loader();
 
 spl_autoload_register([$loader, 'loadClass']);
 
 
-$myRoom = new Room();
+$myRoom = new app\Room;
 echo  'Форма комнаты: ' . $myRoom->form . '<br>';
 $myRoom->echoInfo();
 echo '<br>' . $myRoom->getWindows();
 
-echo "<br>_________________________________________________________<br>";
+echo "<br>_________________________________________________Тест 1<br>";
 
 echo "Тест 2___________________________________________________<br>";
 
-echo "<br>_________________________________________________________<br>";
+echo "<br>_________________________________________________Тест 2<br>";
