@@ -4,11 +4,12 @@ class Loader
 {
     public function loadClass($class)
     {
-        if($class == 'Room')
+        if($class == "Room")
         {
-            $file = "../app/classes/Room.php";
+            $file = '../app/classes/Room.php';
+            echo 'Путььььь: '. $file;
         }
-        elseif($class == 'GoodRoom')
+        elseif($class == "GoodRoom")
         {
             $file = "../vendor/module/GoodRoom.php";
         }

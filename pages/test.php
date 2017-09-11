@@ -9,8 +9,6 @@ $loader = new Loader();
 spl_autoload_register([$loader, 'loadClass']);
 
 
-
-
 $myRoom = new Room();
 echo  'Форма комнаты: ' . $myRoom->form . '<br>';
 $myRoom->echoInfo();
