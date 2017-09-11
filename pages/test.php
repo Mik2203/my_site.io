@@ -1,7 +1,7 @@
 <?php
-echo "Тест 1___________________________________________________<br>";
+//echo "Тест 1___________________________________________________<br>";
 
-require '../app/classes/Loader.php';
+require ('../app/classes/Loader.php');
 //require ("../vendor/module/GoodRoom.php");
 
 $loader = new Loader();
