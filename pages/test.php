@@ -1,15 +1,23 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Пользователь
- * Date: 11.09.2017
- * Time: 9:48
- */
-
 echo "Тест 1___________________________________________________<br>";
 
-echo "_________________________________________________________<br>";
+require '../app/classes/Loader.php';
+//require ("../vendor/module/GoodRoom.php");
+
+$loader = new Loader();
+
+spl_autoload_register([$loader, 'loadClass']);
+
+
+
+
+$myRoom = new Room();
+echo  'Форма комнаты: ' . $myRoom->form . '<br>';
+$myRoom->echoInfo();
+echo '<br>' . $myRoom->getWindows();
+
+echo "<br>_________________________________________________________<br>";
 
 echo "Тест 2___________________________________________________<br>";
 
-echo "_________________________________________________________<br>";
+echo "<br>_________________________________________________________<br>";
