@@ -4,4 +4,4 @@
     <h3>При помощи этой страницы ты станешь лучше!!!</h3>
 </div>
 
-<img src="../views/images/main.jpg">
+<img src="../../../app/views/images/main.jpg">

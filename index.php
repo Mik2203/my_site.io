@@ -6,7 +6,9 @@
  * Time: 17:44
  */
 
-require("views/header.php");
+require ("./vendor/liw/core/Loader.php");
+
+require("app/views/header.php");
 
 //var_dump($_GET); //var_dump - как и echo! Вывод на экран
 
@@ -19,14 +21,14 @@ if(isset($_GET['page']))
 {
 // -- Проверить, присутствует ли в массиве значение
     if (in_array(htmlspecialchars($_GET["page"]), $pages)) {
-        include('pages/' . $_GET['page'] . '.php');
+        include('./app/views/pages/' . $_GET['page'] . '.php');
     } else {
-        include('pages/error.php');
+        include('./app/views/pages/error.php');
     }
 }
 else
 {
-    include("pages/error.php");
+    include("./app/views/pages/error.php");
 }
 
 //switch ($_GET['page'])
@@ -52,5 +54,5 @@ else
 //        break;
 //}
 
-require("views/footer.php");
+require("app/views/footer.php");
 

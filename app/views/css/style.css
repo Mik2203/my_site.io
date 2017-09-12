@@ -1,0 +1,192 @@
+/**
+* a b c d e f g h i j k l m n o p q r s t u v w x y z
+*/
+
+html,
+body {
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.conteiner {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+/**
+* Обертка
+*/
+#wrapper{
+    /* min-width: 100%; */
+    background-color: #f0f0f0;
+    margin: 0 auto -94px auto;
+    min-height: 100%; 
+    /* min-width: 100%; */
+    width: 100%;
+    display: block;
+}
+
+#wrapper:after {
+    background-color: #f0f0f0;
+    content: "";
+    display: block;
+    min-height: 100px;
+    width: 100%;
+}
+/**
+* верхнее меню
+*/
+.main-menu-wrapper{
+    background-color: #2D2D2D;
+    width: 100%;
+}
+.main-menu{
+    background-color: inherit;
+    /* margin: 0 auto; */
+    /* max-width: 1300px; */
+    /* min-height: 50px; */
+    /* padding: 0; */
+    z-index: 999;
+    width: 100%;
+}
+.menu-right{
+    float: right;
+}
+ul{
+    background-color: inherit;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    background-color: inherit;
+    display: inline-block;
+}
+li a:before{
+    content: "";
+    display: block;
+    height: 12px;
+}
+li a{
+    background-color: inherit;
+    color: #FFFFFF;
+    display: block;
+    font: 20px bold;
+    height: 50px;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #000000;
+}
+/**
+* main-menu
+*/
+.cart{
+    padding: 0 20px 0 85px;
+    background: url('../images/cart.png') 20px center no-repeat;
+}
+.homepage{
+    padding-left: 85px;
+    background: url('../images/logo.png') 20px center no-repeat;
+}
+
+.ledenec_item_block_1 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ledenec_item {
+        display: inline;
+}
+
+.ledenec_item ui{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    float: left;
+}
+
+.ledenec_item ui li{
+    display: block;
+    margin: 5px 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #453b54;
+    text-align: center;
+/*    overflow: visible;*/
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    border-radius: 5px;
+}
+
+.ledenec_item ui li .item:first-child{
+    border: 1px solid #000000;
+}
+
+.ledenec_item ui li .item:hover{
+    border-color:#ffca4f;
+    box-shadow:2px 4px 4px 0 rgba(0,0,0,0.5);
+    /*box-shadow: 1px 2px 5px rgba(3, 9, 62, 0.72);*/
+    border-radius: 5px;
+}
+
+.item{
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    /*box-shadow: 1px 2px 5px rgba(3, 9, 62, 0.72);*/
+    height: 200px;
+    border: 1px solid #99dd99;
+    text-align: center;
+}
+
+.item p{
+    font-size: 100%;
+}
+
+/*.item:first-child{
+    border: 2px solid #000000;
+}*/
+
+/*.item:hover{
+    
+}*/
+
+.main{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+/**
+* главный контент
+*/
+.content{
+    /*  max-width: 1260px;
+        min-width: 772px;
+        min-height: inherit;
+        padding: 10px 20px;
+        text-align: justify;*/
+
+    background-color: inherit;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+/**
+* футер
+*/
+#footer{
+    background: #ACACAC;
+    /* min-width: 812px; */
+    width: 100%;
+    min-height: 80px;
+}

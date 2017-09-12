@@ -1,15 +1,16 @@
 <?php
-echo "Тест 1___________________________________________________<br>";
+use vendor\Loader;
+use app\Room;
 
-require ("app/classes/Loader.php");
+echo "Тест 1___________________________________________________<br>";
 //require ("../vendor/module/GoodRoom.php");
 
-$loader = new app\Loader();
+$loader = new Loader();
 
 spl_autoload_register([$loader, 'loadClass']);
 
 
-$myRoom = new app\Room;
+$myRoom = new Room();
 echo  'Форма комнаты: ' . $myRoom->form . '<br>';
 $myRoom->echoInfo();
 echo '<br>' . $myRoom->getWindows();
