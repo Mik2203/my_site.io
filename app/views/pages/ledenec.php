@@ -1,24 +1,25 @@
 <?php
-$arr = array('led' <= '../../../app/views/images/Led_1.jpg', 'led' <= '../../../app/views/images/Led_2.jpg', 'error' <= '../../../app/views/images/Led_not.jpg');
+$arr = array('led' => '../../../app/views/images/Led_1.jpg', 
+    'led' => '../../../app/views/images/Led_2.jpg', 
+    'error' => '../../../app/views/images/Led_not.jpg');
 
 //var_dump($arr['led']);
+//echo "dg: ". $arr['led'] . "<br>";
 
-foreach($arr as $key => $value) 
-  { 
-     echo 'Xmfgflll: ' . "$key = $value <br>";
-  } 
-
- for ($j = 0; $j < count($arr); ++$j)
- {
-     if ($arr[$j]['led'] == 'led')
-     {
-         echo "path: " . $arr[$j][array_keys($arr)];
-     } 
-     else 
-     {
-         echo "path_not: " . $arr[$j][array_keys($arr)];
-     }
- }
+    foreach ($arr as $key => $value) 
+    {
+        //echo 'Xmfgflll: ' . "$key = $value </br>";
+        if ($arr['led'] == $key) 
+        {
+            echo "есть фото: " . $value  . "<br>";
+           
+        } 
+        else 
+        {
+            echo "нет фото: " . $value  . "<br>";
+             break;
+        }
+    }
  ?>
 
 
@@ -30,7 +31,7 @@ foreach($arr as $key => $value)
                 <li>
                     <div class="item">
                         <p>леденец № <?= $i ?></p>
-                        <!--<img src = "" id = "ledenec_item_led" alt="">-->
+                        <img src = "<?=$value?>" id = "ledenec_item_led" alt="">
                     </div>
                 </li>
             </ui>
