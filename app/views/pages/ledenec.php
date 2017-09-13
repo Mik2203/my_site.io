@@ -1,14 +1,24 @@
 <?php 
-//$arr = array('../images/cart.png', '');
+$arr = array('"../../../app/views/images/Led_1.jpg"', '"../../../app/views/images/Led_2.jpg"');
 
-for ($i = 1; $i <= 15; $i++) { ?>
+for ($i = 1; $i <= 15; ++$i) 
+{ ?>
 <div class="ledenec_item_block_1">
     <div class="ledenec_item">
         <ui>
             <li>
                 <div class="item">
                     <p>леденец № <?= $i; ?></p>
-                    <!--<img src="<?=__FILE__?>/images/logo-footer.png" id="header_logo" alt="BestMebelShop-интернет магазин">-->
+                    
+                    <?phpfor ($j = 0; $j < count($arr); ++$j)
+                    {?>
+
+                        <?phpif($arr[$j] < 2)
+                        {?>
+                        <?php echo $arr[$j];?>
+                        <?php}?>
+                        <img src = $arr[$j] id = "header_logo" alt = "BestMebelShop-интернет магазин">
+                       <?php }?>
                     
                 </div>
             </li>
@@ -16,9 +26,8 @@ for ($i = 1; $i <= 15; $i++) { ?>
     </div>
     <div class="clearfix"></div>
 </div>
-<?php } ?>
+ } 
 
-<?php 
-                    echo "gdfg: ".__FILE__/images/cart.png; 
-                    ?>
-
+<!--<?php
+//echo "gdfg: " . (__DIR__) . '../images/cart.png';
+?>-->

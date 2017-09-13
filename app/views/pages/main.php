@@ -5,3 +5,4 @@
 </div>
 
 <img src="../../../app/views/images/main.jpg">
+<img src="../../../app/views/images/Led_1.jpg">
